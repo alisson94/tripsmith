@@ -1,0 +1,314 @@
+[
+  {
+    "id": 1764884291690,
+    "city": "Sao Paulo",
+    "days": 3,
+    "created_at": "2025-12-04T21:38:11.690Z",
+    "titulo_viagem": "Explorando São Paulo em 3 Dias: Cultura, Gastronomia e Lazer",
+    "cidade_geo": {
+      "lat": -23.55052,
+      "lng": -46.633309
+    },
+    "recomendacoes_hoteis": [
+      {
+        "nome": "Hotel Unique",
+        "descricao": "Arquitetura icônica e design sofisticado, com piscina na cobertura e vistas deslumbrantes. Localizado perto do Parque Ibirapuera.",
+        "faixa_preco": "$$$",
+        "endereco_bairro": "Jardins"
+      },
+      {
+        "nome": "Renaissance São Paulo Hotel",
+        "descricao": "Luxo e conforto em uma das melhores localizações, próximo à Avenida Paulista e aos Jardins. Excelente serviço e restaurantes.",
+        "faixa_preco": "$$$",
+        "endereco_bairro": "Jardins"
+      },
+      {
+        "nome": "Ibis Budget São Paulo Consolação",
+        "descricao": "Opção econômica com boa localização, perto da Rua Augusta e do metrô, ideal para quem busca praticidade sem gastar muito.",
+        "faixa_preco": "$",
+        "endereco_bairro": "Consolação"
+      }
+    ],
+    "dias": [
+      {
+        "dia": 1,
+        "resumo": "Um mergulho na história e cultura do centro de São Paulo, com um toque da vibrante gastronomia local.",
+        "atividades": [
+          {
+            "nome": "Catedral Metropolitana de São Paulo (Catedral da Sé)",
+            "horario": "09:00 - 10:00",
+            "descricao": "Visite um dos cartões-postais da cidade, uma imponente obra gótica no coração do centro histórico.",
+            "categoria": "historico",
+            "preco": "$"
+          },
+          {
+            "nome": "Pátio do Colégio",
+            "horario": "10:30 - 11:30",
+            "descricao": "Local de fundação da cidade de São Paulo, hoje um complexo cultural com museu e igreja.",
+            "categoria": "historico",
+            "preco": "$"
+          },
+          {
+            "nome": "Mercado Municipal de São Paulo (Mercadão)",
+            "horario": "12:00 - 14:00",
+            "descricao": "Almoce no famoso Mercadão, experimentando o sanduíche de mortadela ou o pastel de bacalhau, e admire a arquitetura e os coloridos produtos.",
+            "categoria": "alimentacao",
+            "preco": "$$"
+          },
+          {
+            "nome": "Pinacoteca do Estado de São Paulo",
+            "horario": "14:30 - 16:30",
+            "descricao": "Uma das mais importantes instituições de arte do Brasil, com um acervo focado na arte brasileira do século XIX e XX.",
+            "categoria": "cultura",
+            "preco": "$$"
+          },
+          {
+            "nome": "Theatro Municipal de São Paulo",
+            "horario": "19:00 - 22:00",
+            "descricao": "Assista a um espetáculo de ópera, balé ou concerto, ou simplesmente admire a arquitetura neoclássica do teatro por fora.",
+            "categoria": "cultura",
+            "preco": "$$$"
+          }
+        ]
+      },
+      {
+        "dia": 2,
+        "resumo": "Dia dedicado à arte moderna, relaxamento na natureza e à efervescência cultural dos bairros boêmios.",
+        "atividades": [
+          {
+            "nome": "Museu de Arte de São Paulo (MASP)",
+            "horario": "10:00 - 12:30",
+            "descricao": "Explore um dos museus mais emblemáticos do Brasil, conhecido por seu acervo e arquitetura modernista.",
+            "categoria": "cultura",
+            "preco": "$$"
+          },
+          {
+            "nome": "Almoço nos Jardins",
+            "horario": "13:00 - 14:30",
+            "descricao": "Desfrute da culinária sofisticada em um dos muitos restaurantes charmosos do bairro dos Jardins.",
+            "categoria": "alimentacao",
+            "preco": "$$$"
+          },
+          {
+            "nome": "Parque Ibirapuera",
+            "horario": "15:00 - 17:30",
+            "descricao": "Relaxe, caminhe ou alugue uma bicicleta no parque mais famoso da cidade, que abriga museus e pavilhões projetados por Oscar Niemeyer.",
+            "categoria": "natureza",
+            "preco": "$"
+          },
+          {
+            "nome": "Beco do Batman (Vila Madalena)",
+            "horario": "18:00 - 19:00",
+            "descricao": "Admire a galeria a céu aberto de grafites e arte urbana, um dos pontos mais coloridos e fotogênicos da cidade.",
+            "categoria": "cultura",
+            "preco": "$"
+          },
+          {
+            "nome": "Jantar e vida noturna na Vila Madalena",
+            "horario": "19:30 - 23:00",
+            "descricao": "Aproveite a variedade de bares e restaurantes com música ao vivo e gastronomia diversificada do bairro boêmio de São Paulo.",
+            "categoria": "lazer",
+            "preco": "$$"
+          }
+        ]
+      },
+      {
+        "dia": 3,
+        "resumo": "Um dia para compras, vistas panorâmicas e um último gostinho da vida paulistana antes da partida.",
+        "atividades": [
+          {
+            "nome": "Avenida Paulista",
+            "horario": "09:30 - 12:00",
+            "descricao": "Caminhe pela icônica Avenida Paulista, admire os arranha-céus, a arquitetura e visite o Centro Cultural FIESP ou o Itaú Cultural.",
+            "categoria": "lazer",
+            "preco": "$"
+          },
+          {
+            "nome": "Almoço na região da Paulista/Rua Augusta",
+            "horario": "12:30 - 14:00",
+            "descricao": "Escolha entre as diversas opções gastronômicas da região, que vão de restaurantes sofisticados a lanchonetes modernas.",
+            "categoria": "alimentacao",
+            "preco": "$$"
+          },
+          {
+            "nome": "Compras na Rua Oscar Freire ou Galeria do Rock",
+            "horario": "14:30 - 17:00",
+            "descricao": "Para compras de luxo e marcas internacionais, visite a Rua Oscar Freire. Para cultura underground e música, explore a Galeria do Rock no centro.",
+            "categoria": "compras",
+            "preco": "$$$"
+          },
+          {
+            "nome": "Terraço Itália (Mirante)",
+            "horario": "17:30 - 18:30",
+            "descricao": "Suba ao Terraço Itália para apreciar uma vista panorâmica deslumbrante da cidade de São Paulo ao pôr do sol.",
+            "categoria": "lazer",
+            "preco": "$$$"
+          },
+          {
+            "nome": "Jantar de Despedida em Pinheiros ou Itaim Bibi",
+            "horario": "19:30 - 22:00",
+            "descricao": "Finalize sua viagem com um jantar especial em um dos bairros mais badalados e com excelentes opções de restaurantes.",
+            "categoria": "alimentacao",
+            "preco": "$$$"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1764884369263,
+    "city": "Sao Paulo",
+    "days": 3,
+    "created_at": "2025-12-04T21:39:29.264Z",
+    "titulo_viagem": "Explorando São Paulo em 3 Dias: Cultura, Gastronomia e Lazer Urbano",
+    "cidade_geo": {
+      "lat": -23.55052,
+      "lng": -46.633309
+    },
+    "recomendacoes_hoteis": [
+      {
+        "nome": "Hotel Unique",
+        "descricao": "Arquitetura icônica, piscina deslumbrante na cobertura com vista para a cidade e excelente gastronomia. Ótimo para uma experiência luxuosa.",
+        "faixa_preco": "$$$",
+        "endereco_bairro": "Jardins"
+      },
+      {
+        "nome": "Hotel Cadoro São Paulo",
+        "descricao": "Hotel tradicional e reformado, com excelente localização próximo à Avenida Paulista e ao metrô, oferecendo conforto e um bom custo-benefício.",
+        "faixa_preco": "$$",
+        "endereco_bairro": "Consolação"
+      },
+      {
+        "nome": "Selina Aurora São Paulo",
+        "descricao": "Hospedagem moderna e descolada no coração da cidade, com ótima atmosfera e atividades culturais, ideal para quem busca interação e um preço mais acessível.",
+        "faixa_preco": "$",
+        "endereco_bairro": "República"
+      }
+    ],
+    "dias": [
+      {
+        "dia": 1,
+        "resumo": "Imersão na história e cultura do centro de São Paulo, com paradas gastronômicas.",
+        "atividades": [
+          {
+            "nome": "Catedral da Sé",
+            "horario": "09:00",
+            "descricao": "Visite a imponente Catedral Metropolitana de São Paulo, um dos maiores templos neogóticos do mundo.",
+            "categoria": "historico",
+            "preco": "$"
+          },
+          {
+            "nome": "Pátio do Colégio",
+            "horario": "10:30",
+            "descricao": "Local de fundação da cidade de São Paulo, abriga um museu e uma capela com rica história colonial.",
+            "categoria": "historico",
+            "preco": "$"
+          },
+          {
+            "nome": "Mercado Municipal de São Paulo (Mercadão)",
+            "horario": "12:00",
+            "descricao": "Almoce um sanduíche de mortadela ou um pastel de bacalhau e explore a diversidade de produtos e sabores.",
+            "categoria": "alimentacao",
+            "preco": "$$"
+          },
+          {
+            "nome": "Pinacoteca do Estado de São Paulo",
+            "horario": "15:00",
+            "descricao": "Admire o acervo de arte brasileira em um belíssimo edifício do século XIX. Próximo à Estação da Luz.",
+            "categoria": "cultura",
+            "preco": "$$"
+          },
+          {
+            "nome": "Bar da Dona Onça (Edifício Copan)",
+            "horario": "20:00",
+            "descricao": "Jantar com culinária brasileira contemporânea em um dos edifícios mais icônicos de São Paulo, o Copan.",
+            "categoria": "alimentacao",
+            "preco": "$$$"
+          }
+        ]
+      },
+      {
+        "dia": 2,
+        "resumo": "Dia dedicado à natureza, arte moderna e à efervescência cultural da Vila Madalena.",
+        "atividades": [
+          {
+            "nome": "Parque Ibirapuera",
+            "horario": "09:30",
+            "descricao": "Caminhe, ande de bicicleta ou visite um dos museus dentro do parque, como o Museu Afro Brasil ou o MAM.",
+            "categoria": "natureza",
+            "preco": "$"
+          },
+          {
+            "nome": "Museu de Arte Moderna (MAM) ou Museu Afro Brasil",
+            "horario": "11:30",
+            "descricao": "Escolha um dos museus dentro do Parque Ibirapuera para aprofundar-se na arte e cultura.",
+            "categoria": "cultura",
+            "preco": "$$"
+          },
+          {
+            "nome": "Almoço na Vila Madalena",
+            "horario": "13:30",
+            "descricao": "Experimente um dos diversos restaurantes charmosos do bairro boêmio.",
+            "categoria": "alimentacao",
+            "preco": "$$"
+          },
+          {
+            "nome": "Beco do Batman",
+            "horario": "15:00",
+            "descricao": "Explore as ruas repletas de grafites e arte de rua, um verdadeiro museu a céu aberto.",
+            "categoria": "cultura",
+            "preco": "$"
+          },
+          {
+            "nome": "Cervejaria Artesanal ou Bar na Vila Madalena",
+            "horario": "20:00",
+            "descricao": "Desfrute da noite paulistana em um dos muitos bares e cervejarias artesanais da Vila Madalena.",
+            "categoria": "lazer",
+            "preco": "$$"
+          }
+        ]
+      },
+      {
+        "dia": 3,
+        "resumo": "Compras, arte na Avenida Paulista e a sofisticação dos Jardins.",
+        "atividades": [
+          {
+            "nome": "Avenida Paulista",
+            "horario": "09:30",
+            "descricao": "Caminhe pela icônica avenida, admire a arquitetura e sinta o pulso da cidade.",
+            "categoria": "lazer",
+            "preco": "$"
+          },
+          {
+            "nome": "MASP - Museu de Arte de São Paulo Assis Chateaubriand",
+            "horario": "11:00",
+            "descricao": "Visite um dos mais importantes museus do hemisfério sul, famoso por sua arquitetura e acervo de arte ocidental.",
+            "categoria": "cultura",
+            "preco": "$$"
+          },
+          {
+            "nome": "Almoço nos Jardins ou Rua Oscar Freire",
+            "horario": "13:00",
+            "descricao": "Experimente a alta gastronomia da região, com opções para todos os gostos e orçamentos.",
+            "categoria": "alimentacao",
+            "preco": "$$$"
+          },
+          {
+            "nome": "Rua Oscar Freire e região dos Jardins",
+            "horario": "15:00",
+            "descricao": "Desfrute de compras nas boutiques de luxo ou simplesmente passeie pelas charmosas ruas do bairro.",
+            "categoria": "compras",
+            "preco": "$$$"
+          },
+          {
+            "nome": "Jantar de despedida em restaurante sofisticado",
+            "horario": "20:00",
+            "descricao": "Celebre o fim da viagem com um jantar memorável em um dos renomados restaurantes dos Jardins ou Pinheiros, como o D.O.M. ou Maní (reservas essenciais).",
+            "categoria": "alimentacao",
+            "preco": "$$$"
+          }
+        ]
+      }
+    ]
+  }
+]

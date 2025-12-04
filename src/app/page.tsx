@@ -1,7 +1,14 @@
-export default function Home() {
+import { generateScript } from "@/services/geminiService";
+
+export default async function Home() {
+
+  const dados = await generateScript("Sao Paulo", 3);
+  console.log(dados);
+
+
   return (
     <main>
-      <div>Hello world!</div>
+      <div>resp</div>
     </main>
   );
 }
