@@ -310,5 +310,161 @@
         ]
       }
     ]
+  },
+  {
+    "id": 1764988367744,
+    "city": "Rio de Janeiro",
+    "days": 3,
+    "created_at": "2025-12-06T02:32:47.744Z",
+    "titulo_viagem": "Explorando o Rio de Janeiro em 3 Dias",
+    "cidade_geo": {
+      "lat": -22.9068,
+      "lng": -43.1729
+    },
+    "recomendacoes_hoteis": [
+      {
+        "nome": "Copacabana Palace, A Belmond Hotel",
+        "descricao": "Hotel icônico na praia de Copacabana, oferece luxo, serviço impecável e uma piscina magnífica.",
+        "faixa_preco": "$$$",
+        "endereco_bairro": "Copacabana"
+      },
+      {
+        "nome": "Arena Ipanema Hotel",
+        "descricao": "Moderno hotel com vista para o mar em Ipanema, a poucos passos da praia e de ótimos restaurantes.",
+        "faixa_preco": "$$",
+        "endereco_bairro": "Ipanema"
+      },
+      {
+        "nome": "Hotel Nacional Rio de Janeiro",
+        "descricao": "Luxuoso hotel na São Conrado, com arquitetura impressionante de Niemeyer, vistas deslumbrantes e excelente infraestrutura.",
+        "faixa_preco": "$$",
+        "endereco_bairro": "São Conrado"
+      }
+    ],
+    "dias": [
+      {
+        "dia": 1,
+        "resumo": "Dia dedicado às praias icônicas da Zona Sul e ao Pão de Açúcar, com um pôr do sol inesquecível.",
+        "atividades": [
+          {
+            "nome": "Bondinho Pão de Açúcar",
+            "horario": "Manhã (09:00 - 13:00)",
+            "descricao": "Suba de bondinho para ter vistas panorâmicas espetaculares da Baía de Guanabara, das praias e da cidade do Rio de Janeiro.",
+            "categoria": "natureza",
+            "preco": "$$$"
+          },
+          {
+            "nome": "Almoço em Copacabana",
+            "horario": "Tarde (13:00 - 14:30)",
+            "descricao": "Desfrute de um almoço em um dos diversos restaurantes à beira-mar ou próximo à praia de Copacabana.",
+            "categoria": "alimentacao",
+            "preco": "$$"
+          },
+          {
+            "nome": "Passeio pelas Praias de Copacabana e Ipanema",
+            "horario": "Tarde (14:30 - 18:00)",
+            "descricao": "Caminhe pelo calçadão de Copacabana, admire o calçamento de Ipanema e relaxe na areia, observando o movimento.",
+            "categoria": "lazer",
+            "preco": "$"
+          },
+          {
+            "nome": "Pôr do Sol na Pedra do Arpoador",
+            "horario": "Fim de Tarde (18:00 - 19:00)",
+            "descricao": "Assista ao famoso pôr do sol no Arpoador, entre as praias de Ipanema e Copacabana, um espetáculo aplaudido pela multidão.",
+            "categoria": "natureza",
+            "preco": "$"
+          },
+          {
+            "nome": "Jantar em Ipanema",
+            "horario": "Noite (20:00 - 22:00)",
+            "descricao": "Experimente a gastronomia de Ipanema, com diversas opções de restaurantes sofisticados e charmosos.",
+            "categoria": "alimentacao",
+            "preco": "$$$"
+          }
+        ]
+      },
+      {
+        "dia": 2,
+        "resumo": "Exploração dos maiores ícones do Rio, como o Cristo Redentor, seguido de um mergulho na história e boemia do Centro e Lapa.",
+        "atividades": [
+          {
+            "nome": "Cristo Redentor",
+            "horario": "Manhã (09:00 - 13:00)",
+            "descricao": "Visite uma das Sete Maravilhas do Mundo Moderno, o Cristo Redentor no Corcovado, para vistas deslumbrantes da cidade.",
+            "categoria": "historico",
+            "preco": "$$$"
+          },
+          {
+            "nome": "Almoço no Centro",
+            "horario": "Tarde (13:00 - 14:30)",
+            "descricao": "Desfrute de um almoço em um dos restaurantes tradicionais ou modernos do Centro do Rio.",
+            "categoria": "alimentacao",
+            "preco": "$$"
+          },
+          {
+            "nome": "Centro Histórico e Escadaria Selarón",
+            "horario": "Tarde (14:30 - 18:00)",
+            "descricao": "Caminhe pelo Centro, visite o Theatro Municipal, a Catedral Metropolitana e maravilhe-se com a colorida Escadaria Selarón.",
+            "categoria": "cultura",
+            "preco": "$"
+          },
+          {
+            "nome": "Arcos da Lapa e Convento de Santo Antônio",
+            "horario": "Fim de Tarde (18:00 - 19:00)",
+            "descricao": "Passeie pelos Arcos da Lapa, um antigo aqueduto que se tornou um símbolo da boemia carioca, e veja o histórico Convento.",
+            "categoria": "historico",
+            "preco": "$"
+          },
+          {
+            "nome": "Jantar e Noite na Lapa",
+            "horario": "Noite (20:00 - 00:00)",
+            "descricao": "Jante em um dos restaurantes da Lapa e depois aproveite a vida noturna do bairro, famosa pelo samba e pela diversidade de bares.",
+            "categoria": "lazer",
+            "preco": "$$"
+          }
+        ]
+      },
+      {
+        "dia": 3,
+        "resumo": "Dia de contato com a natureza na Floresta da Tijuca e uma imersão cultural no charmoso bairro de Santa Teresa.",
+        "atividades": [
+          {
+            "nome": "Parque Nacional da Tijuca",
+            "horario": "Manhã (09:00 - 13:00)",
+            "descricao": "Explore a maior floresta urbana do mundo, com trilhas, cachoeiras e mirantes. Visite a Vista Chinesa e a Cachoeira das Almas.",
+            "categoria": "natureza",
+            "preco": "$"
+          },
+          {
+            "nome": "Almoço em Santa Teresa",
+            "horario": "Tarde (13:30 - 15:00)",
+            "descricao": "Experimente a culinária local em um dos charmosos restaurantes de Santa Teresa, que oferecem ambiente boêmio e vistas encantadoras.",
+            "categoria": "alimentacao",
+            "preco": "$$"
+          },
+          {
+            "nome": "Passeio de Bondinho e Ateliers de Santa Teresa",
+            "horario": "Tarde (15:00 - 18:00)",
+            "descricao": "Suba no tradicional bondinho de Santa Teresa e explore o bairro, famoso por seus ateliers de artistas, galerias e lojas de artesanato.",
+            "categoria": "cultura",
+            "preco": "$"
+          },
+          {
+            "nome": "Compras em Santa Teresa",
+            "horario": "Fim de Tarde (18:00 - 19:00)",
+            "descricao": "Aproveite para comprar artesanato local, obras de arte e lembranças únicas nas lojas do bairro.",
+            "categoria": "compras",
+            "preco": "$$"
+          },
+          {
+            "nome": "Jantar de Despedida com Vista",
+            "horario": "Noite (20:00 - 22:00)",
+            "descricao": "Desfrute de um jantar de despedida em um restaurante com vista panorâmica para a cidade, como em Santa Teresa ou na Zona Sul.",
+            "categoria": "alimentacao",
+            "preco": "$$$"
+          }
+        ]
+      }
+    ]
   }
 ]

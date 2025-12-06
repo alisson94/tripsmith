@@ -1,5 +1,6 @@
 import { generateScript } from "@/services/geminiService";
 import TripView from "@/components/TripView";
+import TripForm from "@/components/TripForm";
 
 export default async function Home() {
 
@@ -162,7 +163,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 py-12 px-4">
       <div className="max-w-4xl mx-auto">
-        <TripView trip={trip}></TripView>
+        <TripForm></TripForm>
 
       </div>
     </main>

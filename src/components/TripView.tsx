@@ -34,6 +34,14 @@ interface TripViewProps {
 
 export default function TripView({ trip }: TripViewProps){
 
+    if(!trip){
+        return(
+            <div className="bg-white rounded-2xl shadow-xl p-8">
+                <h2>Sem dados</h2>
+            </div>
+        )
+    }
+
     const hotels = trip.recomendacoes_hoteis;
     const days = trip.dias
 
@@ -66,7 +74,7 @@ export default function TripView({ trip }: TripViewProps){
                 <h3 className="text-xl font-semibold text-gray-700 mb-4">Roteiro</h3>
 
                 {days.map((day) => (
-                    <div key={day.dia} className="bg-white p-4 rounded-lg shadow-sm">
+                    <div key={day.dia} className="bg-white p-4 rounded-lg border shadow-sm">
                         <h4 className="text-lg font-bold text-gray-800">
                             Dia {day.dia}
                         </h4>
