@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import fs from 'fs/promises'
-import path from 'path'
+import dbConnect from "@/config/db";
+import tripModel from "@/models/TripModel";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({
@@ -9,26 +9,6 @@ const model = genAI.getGenerativeModel({
         responseMimeType: "application/json",
     } 
 })
-
-const DATA_DIR = path.join(process.cwd(), 'data');
-const TRIPS_FILE = path.join(DATA_DIR, 'trips.json')
-
-async function loadTrips(){
-    try{
-        await fs.mkdir(DATA_DIR, {recursive: true})
-
-        const data = await fs.readFile(TRIPS_FILE, 'utf-8')
-        return JSON.parse(data)
-    }catch(e){
-        console.error(e)
-        return []
-    }
-}
-
-async function saveTrips(trips){
-    await fs.mkdir(DATA_DIR, {recursive: true})
-    await fs.writeFile(TRIPS_FILE, JSON.stringify(trips, null, 2))
-}
 
 export async function generateScript(city, days){
     console.log('Generating script...');
@@ -73,19 +53,13 @@ export async function generateScript(city, days){
 
         const scriptJSON = JSON.parse(response.text());
 
-        const tripWithMetadata = {
-            id: Date.now(),
-            city: city,
-            days: days,
-            created_at: new Date().toISOString(),
+        await dbConnect();
+
+        await tripModel.create({
+            city,
+            days,
             ...scriptJSON
-        }
-
-        const allScripts = await loadTrips()
-
-        allScripts.push(tripWithMetadata)
-
-        await saveTrips(allScripts)
+        })
 
         return scriptJSON;
 

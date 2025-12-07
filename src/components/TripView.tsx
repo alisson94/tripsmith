@@ -1,39 +1,6 @@
-import dynamic from "next/dynamic"
-
-interface Hotel {
-    nome: string
-    descricao: string
-    faixa_preco: string
-    endereco_bairro: string
-}
-
-interface Atividade {
-    nome: string
-    horario: string
-    descricao: string
-    categoria: string
-    preco: string
-}
-
-interface Dia {
-    dia: number
-    resumo: string
-    atividades: Atividade[]
-}
-
-interface TripData{
-    titulo_viagem: string
-    cidade_geo: {lat: number, lng: number}
-    recomendacoes_hoteis: Hotel[]
-    dias: Dia[]
-}
-
-interface TripViewProps {
-    trip: TripData
-}
+import { TripViewProps } from "@/types/trip";
 
 export default function TripView({ trip }: TripViewProps){
-
     if(!trip){
         return(
             <div className="bg-white rounded-2xl shadow-xl p-8">
@@ -46,7 +13,7 @@ export default function TripView({ trip }: TripViewProps){
     const days = trip.dias
 
     return(
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-4">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">{trip.titulo_viagem}</h2>
 
             <div className="mb-8">
