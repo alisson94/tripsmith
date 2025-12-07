@@ -16,6 +16,12 @@ export default function TripForm() {
         setLoading(true);
         setError('');
 
+        if(!days || !city){
+            setError("Cidade ou quantidade de dias inválido")
+            setLoading(false)
+            return
+        }
+
         try{
             const response = await fetch('/api/trip', {
                 method: 'POST',
@@ -51,18 +57,28 @@ export default function TripForm() {
                     placeholder='Cidade...'
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
-                    className='flex-1 focus:outline-none p-4 focus:bg-gray-200 hover:bg-gray-100 rounded-4xl'
+                    className='flex-1 min-w-0 focus:outline-none p-4 focus:bg-gray-200 hover:bg-gray-100 rounded-4xl'
                     />
                 <input 
                     type="text"
                     placeholder='Dias...'
                     value={days}
                     onChange={(e)=> setDays(e.target.value)}
-                    className='flex-1 focus:outline-none p-4 rounded-4xl focus:bg-gray-200 hover:bg-gray-100'
+                    className='flex-1 min-w-0 focus:outline-none p-4 rounded-4xl focus:bg-gray-200 hover:bg-gray-100'
                     />
-                <button className='rounded-4xl bg-blue-500 p-4 text-white font-semibold hover:bg-blue-600 hover:cursor-pointer active:bg-blue-400'>Enviar</button>
+                <button 
+                    disabled={loading}
+                    className='rounded-4xl bg-blue-500 p-4 text-white font-semibold hover:bg-blue-600 hover:cursor-pointer active:bg-blue-400'>
+                    {loading ? "Gerando..." : "Enviar"}
+                </button>
             </form>
         </div>
+
+        {error && (
+            <div className='bg-red-200 text-red-600 px-4 py-2 rounded-2xl mb-4'>
+                <strong>Erro: </strong> {error}
+            </div>
+        )}
 
         {trip && <TripView trip={trip}></TripView>}
         </>
