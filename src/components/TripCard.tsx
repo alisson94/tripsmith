@@ -6,7 +6,6 @@ import { TripViewProps } from "@/types/trip"
 export default function TripCard({trip}: TripViewProps){
     const [isExpanded, setIsExpanded] = useState(false)
 
-
     return(
         <>
         <div className="bg-white rounded-2xl shadow-lg mb-4 overflow-hidden">
@@ -48,7 +47,4 @@ export default function TripCard({trip}: TripViewProps){
         )}
         </>
     )
-
-
-
 }

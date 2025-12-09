@@ -1,13 +1,24 @@
 import tripModel from "@/models/TripModel";
+import dbConnect from "@/config/db";
 
 export const getAllTrips = async () => {
-    return await tripModel.find().lean();
+    await dbConnect();
+    const response = await tripModel.find().lean();
+
+    return JSON.parse(JSON.stringify(response));
 }
 
 export const getTripsByCity = async (city: string) => {
-    return await tripModel.find({ city }).lean();
+    await dbConnect();
+    const response = await tripModel.find({ city }).lean();
+
+    return JSON.parse(JSON.stringify(response));
 }
 
+
 export const getTripById = async (id: string) => {
-    return await tripModel.findById(id).lean();
+    await dbConnect();
+    const response = await tripModel.findById(id).lean();
+
+    return JSON.parse(JSON.stringify(response));
 }

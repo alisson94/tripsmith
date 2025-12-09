@@ -1,5 +1,6 @@
 import { getAllTrips } from "@/services/tripService"; 
 import TripCard from "@/components/TripCard";
+import { TripData } from "@/types/trip";
 
 export default async function Home(){
     const trips = await getAllTrips()
@@ -11,7 +12,7 @@ export default async function Home(){
                     <h1 className="text-4xl font-bold text-gray-800 mb-8">Roteiros salvos</h1>
                 </div>
 
-                {trips.map((trip, idx) => (
+                {trips.map((trip: TripData, idx: number) => (
                     <TripCard trip={trip} key={idx}></TripCard>
                 ))}
 
