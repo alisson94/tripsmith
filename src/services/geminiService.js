@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import dbConnect from "@/config/db";
 import tripModel from "@/models/TripModel";
+import { addLatLonInScript } from "@/services/nominationService";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({
@@ -52,16 +53,18 @@ export async function generateScript(city, days){
         const response = await result.response;
 
         const scriptJSON = JSON.parse(response.text());
+        const scriptWithGeo = await addLatLonInScript(scriptJSON, city);
+        const finalScript = scriptWithGeo || scriptJSON;
 
         await dbConnect();
 
         await tripModel.create({
             city,
             days,
-            ...scriptJSON
+            ...finalScript
         })
 
-        return scriptJSON;
+        return finalScript;
 
     }catch(error){
         console.error("Error generating script:", error);
